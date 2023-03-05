@@ -2,6 +2,7 @@ const formPlayer = document.getElementById('formPlayer');
 const inputPlayer = document.getElementById('inputPlayer');
 const listOfPlayers = document.getElementById('listOfPlayers');
 const allPlayers = []
+const score = document.getElementById('score');
 
 const btn = document.getElementById('btn')
 
@@ -39,13 +40,13 @@ function addPlayer(player) {
 
 
 btn.addEventListener('click', function(e) {
-    const listaIgraca = [
-    ]
+    const listaIgraca = []
     const allPlayersList = document.querySelectorAll('li');
-
+    const finalScore = score.value;
     allPlayersList.forEach((player) => {
         listaIgraca.push({
-            name: player.innerText
+            name: player.innerText,
+            score:finalScore
         })
     })
     localStorage.setItem("lista", JSON.stringify(listaIgraca));
