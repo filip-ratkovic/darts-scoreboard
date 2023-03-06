@@ -51,5 +51,11 @@ btn.addEventListener('click', function(e) {
     })
     localStorage.setItem("lista", JSON.stringify(listaIgraca));
 
-    window.location.href = 'scoreboard.html'
+    if(listaIgraca <1) {
+        alert('Unesite broj igraca')
+    }else {
+        window.location.href = 'scoreboard.html'
+    }
+
+   
 })

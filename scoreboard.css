@@ -30,3 +30,17 @@ body {
     padding: 10px;
     min-width: 200px;
 }
+
+.finished-game {
+    display: none;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+.score-error {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: red;
+}
