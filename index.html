@@ -11,11 +11,15 @@
 
     <h1>Darts Scoreboard</h1>
     <form id="formPlayer">
-    <select name="players" id="score">
-        <option value="301">301</option>
-        <option value="401">401</option>
-        <option value="501">501</option>
-    </select>
+
+        <div class="select-score">
+            <h3>Select score</h3>
+            <select name="players" id="score">
+                <option value="301">301</option>
+                <option value="401">401</option>
+                <option value="501">501</option>
+            </select>
+        </div>
     
         <input type="text" class="inputPlayer" id="inputPlayer" placeholder="Enter players name" autocomplete="off">
     <small>
@@ -26,7 +30,10 @@
         </ul>
 
 
-  <button id="btn" type="button">Start game</button>
+        <div class="btn-cont">
+            
+            <button id="btn" class="btn"type="button">Start game</button>
+        </div>
 </form>
 
     

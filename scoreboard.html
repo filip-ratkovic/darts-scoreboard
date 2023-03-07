@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darts Scoreboard</title>
-    <link rel="stylesheet" href="scoreboard.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,21 +16,32 @@
 
 
     </div>
-    <form>
+    <form id="enter-score">
         <label for="number">Unesite broj poena</label>
-        <input type="number" name="number" id="points-scored" value="">
-        <button id="btn">change</button>
+        <input type="number" name="number" id="points-scored" class="inputPlayer"
+        placeholder="Enter scored points" value="">
+        <button class="btn" id="btn">Change</button>
     </form>
 
 
     <div class="finished-game" id="finished-game">
-        <button class="new-game" id="new-game">
-            New Game
-        </button>
+        <div class="winner-name-cont">
+            <h1>The winner is</h1>
+            <h1 id="winner-name"></h1>
+        </div>
+        <div class="button-cont">
+            <button class="new-game btn" id="new-game">
+                New Game
+            </button>
+    
+            <button class="restart btn" id="restart">
+                Restart
+            </button>
+        </div>
+    </div>
 
-        <button class="restart" id="restart">
-            Restart
-        </button>
+    <div class="score-error" id="score-error">
+        <h1>Please enter players first</h1>
     </div>
 
 
